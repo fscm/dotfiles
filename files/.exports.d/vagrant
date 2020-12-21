@@ -1,0 +1,9 @@
+# exports - vagrant
+# SPDX-License-Identifier: MIT
+
+# vagrant default provider
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
+
+# disable check for box updates
+export VAGRANT_BOX_UPDATE_CHECK_DISABLE=true
+

@@ -1,0 +1,26 @@
+# exports
+# SPDX-License-Identifier: MIT
+
+# suppress deprecation messages
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# enable colors
+export CLICOLOR='1'
+
+# make vim the default editor
+export EDITOR='vim'
+
+# set default pager to cat
+#export PAGER='cat'
+
+# bash history settings
+export HISTFILESIZE='32768'
+export HISTSIZE='32768'
+export HISTCONTROL='ignoredups'
+export HISTIGNORE='ls:bg:fg:history'
+export PROMPT_COMMAND='history -a'
+
+# locale settings
+export LANG='en_US.UTF-8'
+export LC_ALL='en_US.UTF-8'
+

@@ -1,0 +1,17 @@
+# alias
+# SPDX-License-Identifier: MIT
+
+# enable colorized outputs
+alias ls='ls -G'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias tree='tree --charset=ascii'
+
+# password generator(ish)
+alias genpass='openssl rand -base64 20'
+
+# "if the last character of the alias value is a blank, then the next command 
+# word following the alias is also checked for alias expansion." - man bash
+alias sudo='sudo '
+

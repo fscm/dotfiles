@@ -1,0 +1,21 @@
+# functions
+# SPDX-License-Identifier: MIT
+
+# add directory to path (if not already there)
+# $1 - directory (string)
+# $2 - position ('after' or null)
+add_to_path () {
+  case ":${PATH}:" in
+    *":${1}:"*)
+      ;;
+    *)
+      if [ -d "${1}" ]; then
+        if [ "${2}" = "after" ]; then
+          PATH="${PATH:+"$PATH:"}${1}"
+        else
+          PATH="${1}${PATH:+":$PATH"}"
+        fi
+      fi
+  esac
+}
+

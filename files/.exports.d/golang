@@ -1,0 +1,15 @@
+# exports - golang
+# SPDX-License-Identifier: MIT
+# https://gist.github.com/fscm/67dc82758ed498c6ad9a1444955a4c74
+
+# go language
+export GOROOT="/usr/local/go"
+export GOPATH="${HOME}/Documents/Projects/Go"
+export GOBIN="${GOPATH}/bin"
+
+# go binaries and tools
+add_to_path "${GOROOT}/bin" after
+
+# go user binaries and tools
+add_to_path "${GOBIN}" after
+

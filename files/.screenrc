@@ -1,0 +1,43 @@
+# screenrc
+# SPDX-License-Identifier: MIT
+
+# skip the startup message
+startup_message off
+
+# detach on disconnect
+autodetach on
+
+# display the window number and name (bottom)
+caption always
+caption string "%{kw} %-w%{wk} %n %t %{-}%+w"
+
+# encoding
+setenv LC_CTYPE UTF-8
+defutf8 on
+
+# enable 256 colors
+term screen-256color
+
+# no audible bell
+vbell off
+bell_msg ""
+
+# scrollback lines
+scrollback 32768
+
+# allow editors to restore display on exit rather than leaving existing
+# text in place
+altscreen on
+
+# no not block command output if the terminal stops responding
+nonblock on
+
+# bind F11 and F12 to previous and next screen window
+bindkey -k F1 prev   # ctrl+a p
+bindkey -k F2 next   # ctrl+a n
+
+# default windows
+screen -t shell
+screen -t shell
+select 0
+

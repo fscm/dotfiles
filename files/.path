@@ -1,0 +1,15 @@
+# path
+# SPDX-License-Identifier: MIT
+
+# 'list' of directories (enclosed in quotes) to be added to the PATH
+set -- "${HOME}/.bin"
+
+# check if directories exist and add them to PATH
+for user_dir do
+  add_to_path ${user_dir}
+  shift
+done
+unset user_dir
+
+export PATH
+

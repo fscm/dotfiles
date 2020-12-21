@@ -1,0 +1,7 @@
+# exports - java
+# SPDX-License-Identifier: MIT
+# https://gist.github.com/fscm/b689f0a82f7e16242e200c1485c4fab1
+
+# java home
+export JAVA_HOME="$(/usr/libexec/java_home 2>/dev/null)"
+

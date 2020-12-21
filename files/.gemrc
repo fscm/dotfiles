@@ -1,0 +1,15 @@
+# gemrc
+# SPDX-License-Identifier: MIT
+
+# print backtrace an error
+backtrace: true
+
+# disable benchmarks
+benchmark: false
+
+# disable documentation generation
+gem: --no-document
+
+# disable verbose
+verbose: false
+

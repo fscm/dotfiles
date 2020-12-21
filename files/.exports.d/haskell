@@ -1,0 +1,7 @@
+# exports - haskell
+# SPDX-License-Identifier: MIT
+# https://gist.github.com/fscm/32a1cafa44a3027aefeedbae26923442
+
+# haskell user binaries
+add_to_path "${HOME}/Library/Haskell/bin" after
+

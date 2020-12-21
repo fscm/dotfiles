@@ -1,0 +1,26 @@
+# gitconfig
+# SPDX-License-Identifier: MIT
+
+[user]
+    #name = <name>
+    #email = <email>
+    #signingkey = <hash>
+[color]
+    diff = true
+    status = true
+    ui = true
+[core]
+    attributesfile = ~/.gitattributes
+    excludesfile = ~/.gitignore
+    editor = vim
+    trustctime = false
+    precomposeunicode = false
+[help]
+    autocorrect = 1
+[hub]
+    protocol = https
+[push]
+    default = simple
+[commit]
+    #gpgsign = true
+

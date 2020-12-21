@@ -1,0 +1,6 @@
+# exports - ruby
+# SPDX-License-Identifier: MIT
+
+# rubygems user binaries
+add_to_path "$(ruby -r rubygems -e 'puts Gem.user_dir' 2>/dev/null)/bin" after
+

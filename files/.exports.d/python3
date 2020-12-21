@@ -1,0 +1,10 @@
+# exports - python3
+# SPDX-License-Identifier: MIT
+# https://gist.github.com/fscm/37fe2ade6a4e5488fb7541133cbd92bf
+
+# make python use UTF-8 encoding
+export PYTHONIOENCODING='UTF-8'
+
+# python3 user binaries
+add_to_path "$(python3 -m site --user-base 2>/dev/null)/bin" after
+

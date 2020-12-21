@@ -1,0 +1,5 @@
+# exports - packer
+# SPDX-License-Identifier: MIT
+
+# packer cache
+export PACKER_CACHE_DIR="/tmp/packer_cache"
