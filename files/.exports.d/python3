@@ -8,3 +8,7 @@ export PYTHONIOENCODING='UTF-8'
 # python3 user binaries
 add_to_path "$(python3 -m site --user-base 2>/dev/null)/bin" after
 
+# alias to format json files
+# e.g.: echo '{"json":"text"}' | json
+#       json /path/to/file.json
+alias json="python3 -m json.tool"

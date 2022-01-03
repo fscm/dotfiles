@@ -19,3 +19,32 @@ add_to_path () {
   esac
 }
 
+# find public ipv4 address
+my_ip () {
+  dig +short -4 A myip.opendns.com @resolver1.opendns.com
+}
+
+# find public ipv6 address
+#my_ip6 () {
+#  dig +short -6 AAAA myip.opendns.com @resolver1.opendns.com
+#}
+
+# find private ipv4 address
+my_priv_ip () {
+  ifconfig -a -L inet | sed -n 's/ 127.0/_127.0/;s/.*inet \(.*\) netmask.*/\1/p'
+}
+
+# find private ipv6 address
+my_priv_ip6 () {
+  ifconfig -a -L inet6 | sed -n 's/ ::1/_::1/;s/.*inet6 \(.*\) prefixlen.*/\1/p'
+}
+
+# change directory to the current finder directory
+function cd_finder() {
+  local _path_="$(osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)')"
+  if [ -z "${_path_}" ]; then
+    echo 'No Finder window found' >&2
+  else
+    cd "${_path_}"
+  fi
+}
