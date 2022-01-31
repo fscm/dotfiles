@@ -4,27 +4,27 @@ My personal "*dotfiles*".
 
 ## Synopsis
 
-I am using *BASH* on *macOS* as a shell environment. This "*dotfiles*" files 
+I am using *BASH* on *macOS* as a shell environment. This "*dotfiles*" files
 were created to customize my shell environment to my needs.
 
 ## Usage
 
-Clone the repository wherever you want. To clone the repository to the current 
+Clone the repository wherever you want. To clone the repository to the current
 directory use the following command:
 
-```
+```sh
 git clone https://github.com/fscm/dotfiles.git
 ```
 
-After cloning the repository, change to the *dotfiles* folder and run the 
+After cloning the repository, change to the *dotfiles* folder and run the
 `bootstrap` command:
 
-```
+```sh
 cd dotfiles/
 ./bootstrap
 ```
 
-To avoid the confirmation prompts, you can use one of the `bootstrap` command 
+To avoid the confirmation prompts, you can use one of the `bootstrap` command
 options:
 
 * `-b` - Backup existing files.
@@ -32,7 +32,7 @@ options:
 * `-r` - Replace existing files.
 * `-s` - Skip existing files.
 
-**Note:** This command will change the default shell to *BASH* 
+**Note:** This command will change the default shell to *BASH*
 
 ## Contributing
 
@@ -59,5 +59,5 @@ who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE)
 file for details

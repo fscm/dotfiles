@@ -1,0 +1,5 @@
+# exports - latex
+# SPDX-License-Identifier: MIT
+
+# latex user binaries
+add_to_path "/usr/local/texlive/2021basic/bin" after
