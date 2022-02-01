@@ -1,0 +1,6 @@
+# exports - scala
+# SPDX-License-Identifier: MIT
+# https://gist.github.com/fscm/04bf1b1f567d7e5b3af5ecf2a2fd727b
+
+# scala home
+export SCALA_HOME="/Library/Frameworks/Scala.framework/Versions/Current"
