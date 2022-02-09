@@ -22,7 +22,8 @@ BACKUP_ALL=0
 REPLACE_ALL=0
 SKIP_ALL=0
 
-DOTFILES_DIR="./files"
+PROJECT_DIR="$(cd -- "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1; pwd -P)"
+DOTFILES_DIR="${PROJECT_DIR}/files"
 PROFILE_DIR="${HOME}"
 
 
